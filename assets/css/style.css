@@ -303,6 +303,9 @@ section { padding: 0; }
   font-size: 0.95rem;
   color: var(--text);
   line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 .paper__abstract-body p { margin: 0; }
 
