@@ -110,19 +110,17 @@ p  { margin: 0 0 1rem; }
 .hero { padding: 1.5rem 0 1rem; }
 .hero__grid {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 2rem;
   align-items: start;
 }
 @media (max-width: 560px) {
   .hero__grid { grid-template-columns: 1fr; gap: 1.25rem; }
-  .hero__photo { max-width: 130px; }
+  .hero__photo { max-width: 200px; }
 }
 .hero__photo {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;            /* round portrait — softer than card */
+  height: auto;                  /* keep the photo's natural aspect ratio */
 }
 .hero__name { font-size: 2rem; margin-bottom: 0.15rem; }
 .hero__title { color: var(--text-muted); font-size: 1rem; margin: 0 0 0.4rem; }
